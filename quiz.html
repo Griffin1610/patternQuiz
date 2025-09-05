@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="display-photo">
+                <img id="image" src="photos/question1.jpg" alt="question1" />
+            </div>
+                <form>
+                    <div id="question-choices">
+                        <input type="radio" class="button" id="choice-a" name="quiz-choice" value="a" />A
+                        <input type="radio" class="button" id="choice-b" name="quiz-choice" value="b"/>B
+                        <input type="radio" class="button" id="choice-c" name="quiz-choice" value="c"/>C
+                        <input type="radio" class="button" id="choice-d" name="quiz-choice" value="d"/>D
+                    </div>
+                </form>
+                <div id="buttons" class="buttons">
+                    <button onClick="nextQuestion()">Next</button>
+                    <button onClick="previousQuestion()">Go Back</button>
+                </div>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
